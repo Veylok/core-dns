@@ -1,0 +1,14 @@
+
+services:
+  coredns:
+    image: coredns/coredns:latest
+    container_name: coredns
+    command: "-conf /etc/coredns/Corefile"
+    volumes:
+      - ./config:/etc/coredns
+    ports:
+      - "172.16.10.175:53:53/udp"
+      - "172.16.10.175:53:53/tcp"
+   
+      
+    

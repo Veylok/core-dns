@@ -1,0 +1,16 @@
+$TTL 1H
+@       IN SOA  @ veysel.io. (
+                        2024051501      ; serial
+                        3H              ; refresh
+                        1H              ; retry
+                        1W              ; expire
+                        1H )            ; negative cache TTL
+
+; Name servers
+        IN NS   ns1.veysel.io.
+
+; A records for domain names
+veysel.io.              IN A   172.16.10.175
+
+; Name servers' A records
+ns1             IN A   172.16.10.175

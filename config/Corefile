@@ -1,0 +1,11 @@
+veysel.io {
+    file /etc/coredns/veysel.io.db
+}
+. {
+    auto
+    forward . 172.16.5.165:53
+    log
+    errors
+    loop
+
+}
